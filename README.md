@@ -11,4 +11,5 @@
 
 For instance:
 
-* If you are integrating for `Google Pixel3a` AOSP target, then edit `$AOSP/device/google/bonito/device.mk`
+* If you are integrating for `Google Pixel3a` AOSP target, then edit `$AOSP/device/google/bonito/aosp_sargo.mk`
+* If you are integrating for `Google Pixel XL` AOSP target, then edit `$AOSP/device/google/marlin/aosp_marlin.mk`
