@@ -5,4 +5,3 @@ on post-fs-data
     copy /system/etc/device_policies.xml /data/system/device_policies.xml
     chmod 0600 /data/system/device_policies.xml
     chown system system /data/system/device_policies.xml
-

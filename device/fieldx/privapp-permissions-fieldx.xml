@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
-	
+
     <system-user-whitelisted-app package="io.fieldx.app.devices" />
     <allow-in-power-save package="io.fieldx.app.devices" />
 
-     <privapp-permissions package="io.fieldx.updater">
-        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
-        <permission name="android.permission.REBOOT"/>
-        <permission name="android.permission.RECOVERY"/>
-</privapp-permissions>
+
+    <allow-in-power-save package="io.fieldx.updater" />
+    <privapp-permissions package="io.fieldx.updater">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.RECOVERY" />
+        <permission name="android.permission.ALLOCATE_AGGRESSIVE" />
+    </privapp-permissions>
+
 
     <privapp-permissions package="io.fieldx.app.devices">
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
@@ -56,7 +61,8 @@
         <permission name="android.permission.UPDATE_APP_OPS_STATS" />
         <permission name="android.permission.USE_RESERVED_DISK" />
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
-	<permission name="android.permission.RESET_PASSWORD" />
-</privapp-permissions>
+        <permission name="android.permission.RESET_PASSWORD" />
+
+    </privapp-permissions>
 
 </permissions>
