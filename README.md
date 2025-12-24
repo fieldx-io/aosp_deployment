@@ -48,11 +48,11 @@ FieldX is a Mobile Device Management (MDM) software that provides device managem
 
 --
 
-##### Example: Google Pixel 3a
-If your AOSP target is Google Pixel 3a (`bonito`), edit the following file:
+##### Example: Google Pixel 9 Pro
+If your AOSP target is Google Pixel 9 Pro XL (`caiman`), edit the following file:
 
 ```bash
-$AOSP/device/google/bonito/device.mk
+$AOSP/device/google/caiman/device.mk
 ```
 
 Append this line at the end:
@@ -60,6 +60,9 @@ Append this line at the end:
 ```
 $(call inherit-product, device/fieldx/fieldx.mk)
 ```
+
+
+**Note:** A Device specific make file is usually found under `$AOSP/device` folder. For some mediatek, spreadtrum or qualcomm devices, the make file might be buried under their respective chipset code names. 
 
 --
 
@@ -74,9 +77,9 @@ This is an example for building the AOSP image for `Google Pixel 3a`
    ```
 
 2. **Choose your device target**  
-   For Pixel 3a (`bonito`):
+   For Pixel 9 Pro (`caiman`):
    ```bash
-   lunch aosp_bonito-userdebug
+   lunch caiman-cur-userdebug
    ```
 
 3. **Build the AOSP system image**
