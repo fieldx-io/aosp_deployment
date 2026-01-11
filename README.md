@@ -38,8 +38,12 @@ FieldX is a Mobile Device Management (MDM) software that provides device managem
      ```bash
      $AOSP/device/fieldx/Updater/Updater.apk
      ```
+5. **Download FieldX Settings from Portal**
+   - Download the `fieldx_settings.json` from the Downloads -> [Manual Installation](https://admin.fieldx.io/downloads/manual-installation) page.
+   - Replace the stub fieldx_settings.json file with the updated one that has your secret token for enrolling devices directly to the platform.
 
-5. **Link FieldX to your device target**  
+
+6. **Link FieldX to your device target**  
    - Go to your device-specific `device.mk` file.
    - Add the following line at the bottom of the file:
      ```
@@ -118,7 +122,7 @@ The build will generate the system image with the integrated FieldX Device Manag
    You should see:
    ```
    package:io.fieldx.app.devices
-   package:io.fieldx.updater
+   package:io.fieldx.ota
    ```
 
 4. **Test OTA and management workflows**  
