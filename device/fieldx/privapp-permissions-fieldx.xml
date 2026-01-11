@@ -5,8 +5,8 @@
     <allow-in-power-save package="io.fieldx.app.devices" />
 
 
-    <allow-in-power-save package="io.fieldx.updater" />
-    <privapp-permissions package="io.fieldx.updater">
+    <allow-in-power-save package="io.fieldx.ota" />
+    <privapp-permissions package="io.fieldx.ota">
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
         <permission name="android.permission.REBOOT" />
