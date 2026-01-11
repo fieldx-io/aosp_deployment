@@ -16,11 +16,13 @@
  
 PRODUCT_PACKAGES += \
 	DeviceManager \
-	Updater \
+	Updater
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/device_owner_2.xml:/system/etc/device_owner_2.xml \
     $(LOCAL_PATH)/device_policies.xml:/system/etc/device_policies.xml \
     $(LOCAL_PATH)/fieldx.rc:/system/etc/init/fieldx.rc \
     $(LOCAL_PATH)/privapp-permissions-fieldx.xml:/system/etc/permissions/privapp-permissions-fieldx.xml
-    $(LOCAL_PATH)/fieldx_settings.json:/system/etc/system_settings.txt \
+    $(LOCAL_PATH)/fieldx_settings.json:/system/etc/system_settings.txt
+
